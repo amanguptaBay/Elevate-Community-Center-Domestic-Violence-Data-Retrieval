@@ -21,3 +21,16 @@ Base 64 encode case id with utf-8 to get the item UIUD for the API to get the ca
 Parse the case details into data frames
 
 If the I am not a robot 
+
+## Crawling Notes
+
+Case Websites hits 2 Endpoints
+
+# Case Detail API (unprotected)
+https://traffic.scscourt.org/api/case/validate/23FL000001
+This is the API to get the case details
+Using thecase format we got
+
+# Event Detail API (protected)
+https://traffic.scscourt.org/api/case/4692823
+This is the API to get the events
