@@ -1,1 +1,23 @@
 This is a README
+
+
+Crawling Notes
+
+Crawling Notes
+
+We hit up the search api with the case number and get the case id
+Base 64 encode case id with utf-8 to get the item UIUD for the API to get the case detais
+Parse the case details into data frames
+
+We good
+
+
+Flow
+Have the tester log on and handle the I am not a robot
+
+Loop:
+We hit up the search api with the case number and get the case id
+Base 64 encode case id with utf-8 to get the item UIUD for the API to get the case detais
+Parse the case details into data frames
+
+If the I am not a robot 
