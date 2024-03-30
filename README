@@ -31,6 +31,40 @@ https://traffic.scscourt.org/api/case/validate/23FL000001
 This is the API to get the case details
 Using thecase format we got
 
+## cURL command
+
+curl 'https://traffic.scscourt.org/api/case/validate/23FL000001' \
+-X 'GET' \
+-H 'Accept: application/json, text/plain, /' \
+-H 'Sec-Fetch-Site: same-origin' \
+-H 'Cookie: session-id=b297b275-1b8c-4e92-baa9-9f0af94b917c; session-id=b297b275-1b8c-4e92-baa9-9f0af94b917c; session-id=b297b275-1b8c-4e92-baa9-9f0af94b917c; _ga_8XNDN1BPF1=GS1.2.1711815544.1.1.1711816652.0.0.0; _ga=GA1.2.246151762.1711815543; _gid=GA1.2.335724545.1711815543; utma=215336085.246151762.1711815543.1711815578.1711815578.1; utmc=215336085; __utmz=215336085.1711815578.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)' \
+-H 'Sec-Fetch-Dest: empty' \
+-H 'Accept-Language: en-US,en;q=0.9' \
+-H 'Sec-Fetch-Mode: cors' \
+-H 'Host: traffic.scscourt.org' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15' \
+-H 'Referer: https://traffic.scscourt.org/search' \
+-H 'Accept-Encoding: gzip, deflate, br' \
+-H 'Connection: keep-alive'
+
 # Event Detail API (protected)
 https://traffic.scscourt.org/api/case/4692823
 This is the API to get the events
+
+Works regardless of session id content
+
+## cURL command
+ curl 'https://traffic.scscourt.org/api/case/4726527' \
+-X 'GET' \
+-H 'Accept: application/json, text/plain, */*' \
+-H 'Sec-Fetch-Site: same-origin' \
+-H 'Accept-Encoding: gzip, deflate, br' \
+-H 'Accept-Language: en-US,en;q=0.9' \
+-H 'Sec-Fetch-Mode: cors' \
+-H 'Host: traffic.scscourt.org' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15' \
+-H 'Connection: keep-alive' \
+-H 'Referer: https://traffic.scscourt.org/case/NDcyNjUyNw==' \
+-H 'Cookie: session-id=2f1c42ea-b761-497f-84b8-fa8e6f65ffb0; session-id=2f1c42ea-b761-497f-84b8-fa8e6f65ffb0' \
+-H 'Sec-Fetch-Dest: empty' \
+-H 'case-token: VoR9RO8yZaIlu1J+Ne/rwwl+mNY0VVM1'
